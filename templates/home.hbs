@@ -1,1 +1,11 @@
 <h1>Would you like to write an email?</h1>
+
+<ul>
+  {{#each email in model}}
+  <li>{{#link-to 'email' email }}{{email.subject}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+<div class="col-md-12">
+  {{#link-to 'new-email' class="brn brn-primary"}}New Email{{/link-to}}
+</div>
