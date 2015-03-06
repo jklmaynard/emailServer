@@ -1,0 +1,1 @@
+EmailServer = Ember.Application.create();
