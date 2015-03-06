@@ -9,7 +9,7 @@ EmailServer.NewEmailController = Ember.Controller.extend({
       });
 
       newEmail.save();
-      this.transitionToRoute('user');
+      this.transitionToRoute('emails');
     }
   }
 })

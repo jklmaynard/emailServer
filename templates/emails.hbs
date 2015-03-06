@@ -3,9 +3,7 @@
 <ul>
   {{#each email in model}}
   <li>
-    <h4>{{email.to}}</h4><br>
-    {{#link-to 'email' email }}{{email.subject}}{{/link-to}}
-    </li>
+    <h4>{{email.to}}</h4>{{#link-to 'email' email }}{{email.subject}}{{/link-to}}</li>
   {{/each}}
 </ul>
 
